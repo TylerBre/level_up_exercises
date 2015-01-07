@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %title Cyoa
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body.flex
+    .wrapper.container-fluid
+      = yield
+    = javascript_include_tag 'application'
+

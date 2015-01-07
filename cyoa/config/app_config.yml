@@ -1,0 +1,19 @@
+defaults: &defaults
+  cta:
+    bus:
+      host: "http://www.ctabustracker.com/bustime/api/v1"
+      key: "yLV6AtpvS8jFqARYYigwvv6zy"
+    train:
+      host: "http://lapi.transitchicago.com/api/1.0/"
+      key: "e52be4bfaa8a4864a9d77945ee853b47"
+
+development:
+  # add stuff here to override defaults.
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  # add stuff here to override defaults.
+  <<: *defaults
